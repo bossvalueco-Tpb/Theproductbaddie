@@ -1,0 +1,19 @@
+{
+  "name": "theproductbaddie",
+  "version": "1.0.0",
+  "description": "TPB Importation Mastery - Learn how to import directly from China",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "importation",
+    "china",
+    "business"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
