@@ -1317,11 +1317,11 @@ const WHATSAPP_MESSAGE = "Hi! I'm interested in joining TPB Importation Mastery 
 function openWhatsApp(source) {
   // TikTok Pixel — Lead event
   if (window.ttq) {
-    ttq.track('SubmitForm', { content_name: 'TPB Importation Mastery Enrollment', content_category: 'Lead', value: 25000, currency: 'NGN' });
+    ttq.track('Contact', { content_name: 'TPB Importation Mastery Enrollment', content_category: 'WhatsApp Inquiry', value: 25000, currency: 'NGN' });
   }
   // Meta Pixel — Lead event
   if (window.fbq) {
-    fbq('track', 'Lead', { content_name: 'TPB Importation Mastery', value: 25000, currency: 'NGN', source: source });
+    fbq('track', 'Lead', { content_name: 'TPB Importation Mastery Enrollment', value: 25000, currency: 'NGN', source: source });
   }
   // Google Analytics 4 — generate_lead event
   if (window.gtag) {
