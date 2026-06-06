@@ -1317,7 +1317,7 @@ const WHATSAPP_MESSAGE = "Hi! I'm interested in joining TPB Importation Mastery 
 function openWhatsApp(source) {
   // TikTok Pixel — Lead event
   if (window.ttq) {
-    ttq.track('Contact', { content_name: 'TPB Importation Mastery Enrollment', content_category: 'WhatsApp Inquiry', value: 25000, currency: 'NGN' });
+    ttq.track('Contact', { content_id: 'TPB_IMPORTATION_MASTERY', content_name: 'TPB Importation Mastery Enrollment', content_category: 'WhatsApp Inquiry', value: 25000, currency: 'NGN' });
   }
   // Meta Pixel — Lead event
   if (window.fbq) {
@@ -1395,11 +1395,12 @@ stickyObs.observe(hero);
 window.addEventListener('load', function() {
   if (window.ttq) {
     ttq.track('ViewContent', {
-      content_name: 'TPB Importation Mastery Landing Page',
-      content_category: 'Training Program',
-      value: 25000,
-      currency: 'NGN'
-    });
+  content_id: 'TPB_IMPORTATION_MASTERY',
+  content_name: 'TPB Importation Mastery Landing Page',
+  content_category: 'Training Program',
+  currency: 'NGN',
+  value: 25000
+});
   }
   if (window.fbq) {
     fbq('track', 'ViewContent', {
