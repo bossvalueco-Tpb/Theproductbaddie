@@ -1317,6 +1317,10 @@ const WHATSAPP_MESSAGE = "Hi! I'm interested in joining TPB Importation Mastery 
 function openWhatsApp(source) {
   // TikTok Pixel — Lead event
   if (window.ttq) {
+    ttq.track('ClickButton', {
+      button_name: 'WhatsApp CTA'
+    });
+       
     ttq.track('Contact', { content_id: 'TPB_IMPORTATION_MASTERY', content_name: 'TPB Importation Mastery Enrollment', content_category: 'WhatsApp Inquiry', value: 25000, currency: 'NGN' });
   }
   // Meta Pixel — Lead event
